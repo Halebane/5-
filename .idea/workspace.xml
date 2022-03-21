@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a058541-4632-4c36-9d08-c9ff208e8a63" name="Changes" comment="#1 Обновила таблицу в базе данных">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b292bdce-5fd5-4874-bcc2-7246c9f75b4f.xml" beforeDir="false" />
+    <list default="true" id="4a058541-4632-4c36-9d08-c9ff208e8a63" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d14c9f8-ed71-4d6c-9a37-00bd7aba299a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5d14c9f8-ed71-4d6c-9a37-00bd7aba299a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +24,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -163,6 +164,7 @@
       <workItem from="1647802262832" duration="370000" />
       <workItem from="1647854518284" duration="2820000" />
       <workItem from="1647884820593" duration="326000" />
+      <workItem from="1647885152483" duration="1026000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Первая часть">
       <created>1647789851028</created>
@@ -199,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647882026911</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="#2 Обновила таблицу в базе данных">
+      <created>1647885173339</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647885173339</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +231,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;db.sqlite3" />
     <MESSAGE value="#1 Добавили БД" />
     <MESSAGE value="#1 Обновила таблицу в базе данных" />
-    <option name="LAST_COMMIT_MESSAGE" value="#1 Обновила таблицу в базе данных" />
+    <MESSAGE value="#2 Обновила таблицу в базе данных" />
+    <option name="LAST_COMMIT_MESSAGE" value="#2 Обновила таблицу в базе данных" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
