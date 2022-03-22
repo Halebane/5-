@@ -7,7 +7,11 @@ def index(request):
     return render(request, 'core/index.html', {'books': books})
 
 def book_list(request):
-    books= core.models.Book.objects.all()
+    name = request.GET.get('name')
+    books = core.models.Book.objects.all()
+    if name:
+        books = books.filter(name__icontains=name)
+
     return render(request, 'core/book_list.html', {'books': books})
 
 def book_detail(request, pk):
