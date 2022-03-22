@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4a058541-4632-4c36-9d08-c9ff208e8a63" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/core/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/core/book_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/templates/core/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/core/book_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/templates/core/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/core/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +167,7 @@
       <workItem from="1647854518284" duration="2820000" />
       <workItem from="1647884820593" duration="326000" />
       <workItem from="1647885152483" duration="4089000" />
-      <workItem from="1647962921348" duration="8734000" />
+      <workItem from="1647962921348" duration="10990000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Первая часть">
       <created>1647789851028</created>
@@ -245,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647970458507</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="#4 Наследовала шаблон">
+      <created>1647972306308</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1647972306308</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +282,8 @@
     <MESSAGE value="#3 Добавила страницу о деталях книги" />
     <MESSAGE value="#3 Добавила фильтр в список книг" />
     <MESSAGE value="#3 Добавила классы" />
-    <option name="LAST_COMMIT_MESSAGE" value="#3 Добавила классы" />
+    <MESSAGE value="#4 Наследовала шаблон" />
+    <option name="LAST_COMMIT_MESSAGE" value="#4 Наследовала шаблон" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

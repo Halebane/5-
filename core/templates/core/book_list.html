@@ -1,14 +1,8 @@
 {% extends 'core/index.html' %}
 
+
 {% block content %}
-  <form class="row g-3">
-    <div class="col-auto">
-      <input type="text" class="form-control" placeholder="Название" name="name" value="{{ request.GET.name }}">
-    </div>
-    <div class="col-auto">
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-  </form>
+{% include 'core/search_books_include.html' %}
 
   {{ request.user }}
 
@@ -24,9 +18,11 @@
     {% for book in object_list %}
       <tr>
         <th scope="row">{{ forloop.counter }}</th>
-        <td><a href="{% url 'core:book_detail' book.pk %}">{{ book.name }}</a></td>
+        <td><a href="{% url 'core:book_detail' book.pk %}">{{ book.name|capfirst }}</a></td>
         <td>{{book.pages|default:'-'}}</td>
       </tr>
+    {% empty %}
+      <h4>Не найдено</h4>
     {% endfor %}
     </tbody>
   </table>

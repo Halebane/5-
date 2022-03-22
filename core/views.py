@@ -6,7 +6,7 @@ import core.models
 
 
 class TitleMixin:
-    title = None
+    title: str = None
 
     def get_title(self):
         return self.title
@@ -33,7 +33,8 @@ class IndexView(TitleMixin, TemplateView):
 # def index(request):
 # return render(request, 'core/index.html')
 
-class Books(ListView):
+class Books(TitleMixin, ListView):
+    title = 'Книги'
     def get_queryset(self):
         name = self.request.GET.get('name')
         queryset = core.models.Book.objects.all()
@@ -49,9 +50,11 @@ class Books(ListView):
 #        books = books.filter(name__icontains=name)
 #    return render(request, 'core/book_list.html', {'books': books})
 
-class BookDetail(DetailView):
+class BookDetail(TitleMixin, DetailView):
     queryset = core.models.Book.objects.all()
 
+    def get_title(self):
+        return str(self.get_object())
 
 # def book_detail(request, pk):
 #    return HttpResponseNotFound('Не найдено')
@@ -60,3 +63,4 @@ class BookDetail(DetailView):
 
 def admin(request):
     return render(request, 'core/index.html')
+
