@@ -51,12 +51,12 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Count</th>
+        <th scope="col">Название</th>
+        <th scope="col">Количество страниц</th>
       </tr>
     </thead>
     <tbody>
-    {% for book in books %}
+    {% for book in object_list %}
       <tr>
         <th scope="row">{{ forloop.counter }}</th>
         <td><a href="{% url 'core:book_detail' book.pk %}">{{ book.name }}</a></td>

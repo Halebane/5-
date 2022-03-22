@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>{{ title }}</title>
   </head>
   <body>
 
@@ -37,26 +37,7 @@
     </div>
   </nav>
 
-
-
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Count</th>
-      </tr>
-    </thead>
-    <tbody>
-    {% for book in books %}
-      <tr>
-        <th scope="row">{{ forloop.counter }}</th>
-        <td>{{book.name}}</td>
-        <td>{{book.pages|default:'-'}}</td>
-      </tr>
-    {% endfor %}
-    </tbody>
-  </table>
+  {{ info }}
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 

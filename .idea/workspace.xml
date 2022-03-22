@@ -7,6 +7,8 @@
     <list default="true" id="4a058541-4632-4c36-9d08-c9ff208e8a63" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/templates/core/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/core/book_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/core/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/core/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +168,7 @@
       <workItem from="1647854518284" duration="2820000" />
       <workItem from="1647884820593" duration="326000" />
       <workItem from="1647885152483" duration="4089000" />
-      <workItem from="1647962921348" duration="4694000" />
+      <workItem from="1647962921348" duration="7224000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Первая часть">
       <created>1647789851028</created>
@@ -231,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647967105590</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="#3 Добавила фильтр в список книг">
+      <created>1647967853154</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1647967853154</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +267,8 @@
     <MESSAGE value="#2 Обновила таблицу добавила автора" />
     <MESSAGE value="#2 Добавила запросы" />
     <MESSAGE value="#3 Добавила страницу о деталях книги" />
-    <option name="LAST_COMMIT_MESSAGE" value="#3 Добавила страницу о деталях книги" />
+    <MESSAGE value="#3 Добавила фильтр в список книг" />
+    <option name="LAST_COMMIT_MESSAGE" value="#3 Добавила фильтр в список книг" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -280,6 +290,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/5_$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1647802338509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/5_$manage.coverage" NAME="manage Coverage Results" MODIFIED="1647967195967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/5_$manage.coverage" NAME="manage Coverage Results" MODIFIED="1647967720100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
