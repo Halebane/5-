@@ -1,6 +1,5 @@
-from django.http import HttpResponseNotFound
-from django.shortcuts import render
-from django.views.generic import TemplateView, ListView, DetailView
+from django.urls import reverse
+from django.views.generic import TemplateView, ListView, DetailView, UpdateView, CreateView, DeleteView
 
 import core.models
 import core.forms
@@ -21,7 +20,7 @@ class TitleMixin:
 
 class IndexView(TitleMixin, TemplateView):
     template_name = 'core/index.html'
-    title = "Главная страница"
+    title = 'Главная страница'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
@@ -32,9 +31,6 @@ class IndexView(TitleMixin, TemplateView):
         return 'Главная страница'
 
 
-# def index(request):
-# return render(request, 'core/index.html')
-
 class Books(TitleMixin, ListView):
     title = 'Книги'
 
@@ -42,25 +38,13 @@ class Books(TitleMixin, ListView):
         return core.filters.BookFilter(self.request.GET)
 
     def get_queryset(self):
-        # name = self.request.GET.get('name')
-        # queryset = core.models.Book.objects.all()
-        # if name:
-        #     queryset = queryset.filter(name__icontains=name)
         return self.get_filters().qs
 
     def get_context_data(self):
         context = super().get_context_data()
-        # context['form'] = core.forms.BookSearch(self.request.GET or None)
         context['filters'] = self.get_filters()
         return context
 
-
-# def book_list(request):
-#    name = request.GET.get('name')
-#    books = core.models.Book.objects.all()
-#    if name:
-#        books = books.filter(name__icontains=name)
-#    return render(request, 'core/book_list.html', {'books': books})
 
 class BookDetail(TitleMixin, DetailView):
     queryset = core.models.Book.objects.all()
@@ -69,10 +53,31 @@ class BookDetail(TitleMixin, DetailView):
         return str(self.get_object())
 
 
-# def book_detail(request, pk):
-#    return HttpResponseNotFound('Не найдено')
-#    book= core.models.Book.objects.get(pk=pk)
-#    return render(request, 'core/book_detail.html', {'book': book})
+class BookUpdate(TitleMixin, UpdateView):
+    model = core.models.Book
+    form_class = core.forms.BookEdit
 
-def admin(request):
-    return render(request, 'core/index.html')
+    def get_title(self):
+        return f'Изменение данных книги "{str(self.get_object())}"'
+
+    def get_success_url(self):
+        return reverse('core:book_list')
+
+
+class BookCreate(TitleMixin, CreateView):
+    model = core.models.Book
+    form_class = core.forms.BookEdit
+    title = 'Добавление книги'
+
+    def get_success_url(self):
+        return reverse('core:book_list')
+
+
+class BookDelete(TitleMixin, DeleteView):
+    model = core.models.Book
+
+    def get_title(self):
+        return f'Удаление книги {str(self.get_object())}'
+
+    def get_success_url(self):
+        return reverse('core:book_list')
