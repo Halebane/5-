@@ -10,7 +10,6 @@ import core.filters
 class TitleMixin:
     title: str = None
 
-
     def get_title(self):
         return self.title
 
@@ -47,12 +46,14 @@ class Books(TitleMixin, ListView):
         # queryset = core.models.Book.objects.all()
         # if name:
         #     queryset = queryset.filter(name__icontains=name)
-        return self.get_filters()
+        return self.get_filters().qs
 
     def get_context_data(self):
         context = super().get_context_data()
-        context['form'] = core.forms.BookSearch(self.request.GET or None)
+        # context['form'] = core.forms.BookSearch(self.request.GET or None)
+        context['filters'] = self.get_filters()
         return context
+
 
 # def book_list(request):
 #    name = request.GET.get('name')
@@ -67,6 +68,7 @@ class BookDetail(TitleMixin, DetailView):
     def get_title(self):
         return str(self.get_object())
 
+
 # def book_detail(request, pk):
 #    return HttpResponseNotFound('Не найдено')
 #    book= core.models.Book.objects.get(pk=pk)
@@ -74,4 +76,3 @@ class BookDetail(TitleMixin, DetailView):
 
 def admin(request):
     return render(request, 'core/index.html')
-

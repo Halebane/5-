@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a058541-4632-4c36-9d08-c9ff208e8a63" name="Changes" comment="">
+    <list default="true" id="4a058541-4632-4c36-9d08-c9ff208e8a63" name="Changes" comment="#5 Подключила bootstrap">
+      <change beforePath="$PROJECT_DIR$/.idea/5-.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/5-.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/templates/core/search_books_include.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/core/search_books_include.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +73,7 @@
     <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../../../Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="service.view.auto.scroll.to.source" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RunManager" selected="Python.manage">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -169,7 +173,7 @@
       <workItem from="1647884820593" duration="326000" />
       <workItem from="1647885152483" duration="4089000" />
       <workItem from="1647962921348" duration="11158000" />
-      <workItem from="1648040521551" duration="6469000" />
+      <workItem from="1648040521551" duration="10243000" />
     </task>
     <task id="LOCAL-00001" summary="#1 Первая часть">
       <created>1647789851028</created>
@@ -262,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647974494494</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="#5 Подключила bootstrap">
+      <created>1648047142700</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1648047142700</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +303,8 @@
     <MESSAGE value="#3 Добавила фильтр в список книг" />
     <MESSAGE value="#3 Добавила классы" />
     <MESSAGE value="#4 Наследовала шаблон" />
-    <option name="LAST_COMMIT_MESSAGE" value="#4 Наследовала шаблон" />
+    <MESSAGE value="#5 Подключила bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="#5 Подключила bootstrap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -314,6 +326,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/5_$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1647802338509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/5_$manage.coverage" NAME="manage Coverage Results" MODIFIED="1648046985208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/5_$manage.coverage" NAME="manage Coverage Results" MODIFIED="1648054247933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
