@@ -8,5 +8,5 @@ class BookFilter(django_filters.FilterSet):
 
     class Meta:
         model = core.models.Book
-        fields = ('name', )
+        fields = '__all__'
 
