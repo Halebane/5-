@@ -1,5 +1,26 @@
 {% extends 'core/index.html' %}
 {% block content %}
-    <a href="{% url 'core:book_update' object.pk %}">Изменить</a>
-    <a href="{% url 'core:book_delete' object.pk %}">Удалить</a>
+Добавить чтоб инфа про книги была
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Название</th>
+            <th scope="col">Количество страниц</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for book in object_list %}
+            <tr>
+                <th scope="row">{{ forloop.counter }}</th>
+                <td><a href="{% url 'core:book_detail' book.pk %}">{{ book.name|capfirst }}</a></td>
+                <td>{{ book.pages|default:" - " }}</td>
+            </tr>
+        {% empty %}
+            <h4>Не найдено</h4>
+        {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'core:book_update' object.pk %}" class="btn btn-outline-warning" role="button" data-bs-toggle="button">Изменить</a>
+    <a href="{% url 'core:book_delete' object.pk %}" class="btn btn-outline-danger" role="button" data-bs-toggle="button">Удалить</a>
 {% endblock %}
