@@ -1,0 +1,13 @@
+{% extends 'core/index.html' %}
+{% block content %}
+    <h1>Регистрация</h1>
+    <form method="post" style="margin-top: 10px">
+        {% csrf_token %}
+        Имя пользователя: <input type="text" name="username" style="margin: 5px"><br>
+        Email: <input type="email" name="email"  style="margin: 5px"><br>
+        Пароль: <input type="password" name="password"  style="margin: 5px"><br>
+        Пароль еще раз: <input type="password" name="password2"  style="margin: 5px"><br>
+
+        <input type="submit" class="btn btn-outline-success" value="Регистрация">
+    </form>
+{% endblock %}

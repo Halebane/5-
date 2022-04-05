@@ -12,6 +12,21 @@ class Book(models.Model):
     author = models.ForeignKey('core.Author', on_delete=models.CASCADE, null=True, blank=True, related_name='books')
     name = models.CharField('Название', max_length=128)
     pages = models.IntegerField('Количество страниц', blank=True, null=True)
+    reed = models.CharField('Название', max_length=128)
+
+    class Meta:
+        ordering = ['pages']
+        verbose_name = 'Книга'
+        verbose_name_plural = 'Книги'
+
+    def __str__(self):
+        return self.name
+
+
+class Bookreed(models.Model):
+    author = models.ForeignKey('core.Author', on_delete=models.CASCADE, null=True, blank=True, related_name='books')
+    name = models.CharField('Название', max_length=128)
+    pages = models.IntegerField('Количество страниц', blank=True, null=True)
 
     class Meta:
         ordering = ['pages']
