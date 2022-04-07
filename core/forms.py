@@ -7,6 +7,8 @@ class BookSearch(forms.Form):
     name = forms.CharField(label='Название', required=False)
     pages = forms.IntegerField(label='Кол-во страниц', required=False, help_text='Минимальное количество страниц')
     author = forms.ModelChoiceField(label='Автор', required=False, queryset=core.models.Author.objects.all())
+    genre = forms.ModelChoiceField(label='Жанр', required=False, queryset=core.models.Genre.objects.all())
+    # reed = forms.BooleanField(label='Прочитано', required=False)
 
     def clean_pages(self):
         pages = self.cleaned_data.get('pages')
