@@ -9,6 +9,7 @@
             <th scope="col">#</th>
             <th scope="col">Название</th>
             <th scope="col">Количество страниц</th>
+            <th scope="col">Жанр</th>
         </tr>
         </thead>
         <tbody>
@@ -17,6 +18,7 @@
                 <th scope="row">{{ forloop.counter }}</th>
                 <td><a href="{% url 'core:book_detail' book.pk %}">{{ book.name|capfirst }}</a></td>
                 <td>{{ book.pages|default:" - " }}</td>
+                <td>{{ book.genre|default:" - " }}</td>
             </tr>
         {% empty %}
             <h4>Не найдено</h4>

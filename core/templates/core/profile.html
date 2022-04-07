@@ -3,6 +3,8 @@
     <h1>Мой профиль</h1>
 
     Имя пользователя: {{ user.username }} <br>
-    Email: {{ user.email }}
+    Email: {{ user.email }} <br>
+
     <a href="{% url 'core:exit' %}" class="btn btn-outline-danger"> Выйти </a>
+
 {% endblock %}
